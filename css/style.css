@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(148, 144, 213, 1) 8%, rgba(58, 131, 145, 1) 53%, rgba(122, 55, 145, 1) 95%);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.list_name {
+    color: rgb(250, 64, 64);
+}
+
+header {
+    font-size: 2rem;
+}
+
+header,
+form {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+form input {
+    width: 30%;
+    margin-right: 10px;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: rgb(122, 226, 25);
+    background: black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form button:hover,
+.clear_all:hover {
+    background: rgb(122, 226, 25);
+    color: black;
+}
+
+.todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete_btn,
+.complete_btn {
+    background: rgb(122, 226, 25);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.delete_btn {
+    background: rgb(204, 56, 56);
+}
+
+.todo_item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.clear_all {
+    margin: 20px 45%;
+    border: none;
+    background: black;
+    color: rgb(122, 226, 25);
+}
